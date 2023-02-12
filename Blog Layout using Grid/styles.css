@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Raleway:wght@500&family=Roboto+Flex:opsz@8..144&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bigwrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(39, 36, 36);
+}
+
+#wrapper{
+    width: 60%;
+    /* height: 94%; */
+    margin: 0px auto;
+    background-color: white;
+    padding-bottom: 20px    ;
+}
+
+.navbar{
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+    height: 75px;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .link a{
+    text-decoration: none;
+    color: #777C85;
+}
+
+.navbar h2{
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.container{
+    width: 90%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.box{
+    padding: 10px 20px 10px 10px;
+    font-family: 'Roboto Flex', sans-serif;
+    box-shadow: 1px 0px 1px #cfd3d8, 0px 1px 1px #cfd3d8, -1px 0px 1px #cfd3d8, 0px -1px 1px #cfd3d8;
+    transition: all 0.5s ease;
+}
+
+.box:hover{
+    box-shadow: 1px 0px 10px #cfd3d8, 0px 1px 10px #cfd3d8, -1px 0px 10px #cfd3d8, 0px -1px 10px #cfd3d8;
+}
+
+.box:hover .topic{
+    color: rgb(40, 174, 40);
+}
+
+.box .topic{
+    font-size: 16px;
+    font-weight: 600;
+    color: #4E5DC0;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.box .title{
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+
+.box .blurtext{
+    font-size: 14px;
+    font-weight: 500;
+    color: #777C85;
+    margin-bottom: 10px;
+}
+
+.box .para{
+    font-size: 15px;
+    color: #777C85;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+.box:nth-child(even) .para{
+    margin-bottom: 20px;
+}
+
+.box .foottext{
+    color: #4E5DC0;
+    text-decoration: underline;
+    
+}

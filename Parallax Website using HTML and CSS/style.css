@@ -1,0 +1,146 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+
+
+        /* wrapper styling */
+
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    scroll-behavior: smooth;
+}
+
+.parallax{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform-style: preserve-3d;
+}
+
+
+
+        /* parallax effect styling */
+
+
+
+.background, .foreground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.parallax h1{
+    position: absolute;
+    text-transform: uppercase;
+    top: 5rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+        /* adventure block stying */
+
+
+
+.adventure{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.adventure h2{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0 0 0;
+}
+
+
+
+        /* section stying */
+
+
+
+.section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    /* padding: 5rem 0; */
+}
+
+.section .text{
+    margin: 0;
+    padding: 5rem 10rem;
+}
+
+
+.bg{
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg h2{
+    text-transform:uppercase;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%); */
+
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.bg1{
+    background-image: url(/assets/sport-1.jpg);
+}
+
+.bg2{
+    background-image: url(/assets/sport-2.jpg);
+}
+
+.bg3{
+    background-image: url(/assets/sport-3.jpg);
+}

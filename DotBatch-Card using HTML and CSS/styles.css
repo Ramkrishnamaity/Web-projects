@@ -1,0 +1,59 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container{
+   background-color: white;
+   border-radius: 7px;
+   margin: auto;
+   margin-top: 20vh;
+   padding: 20px 20px;
+   width: 400px;
+}
+
+img{
+    width: 360px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.container div{
+    background-color: gray;
+    height: 1.5px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+p{
+    color: rgb(81, 81, 211);
+    font-weight: 800;
+}
+
+.overwrite{
+    margin: 0 8px;
+    color: gray;
+    font-weight: 800;
+    text-decoration: line-through;
+}
+
+.off{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(37, 210, 181);
+    border-radius: 5px;
+    padding:5px 6px;
+}
